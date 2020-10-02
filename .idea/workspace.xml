@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bdf082-294a-46ad-8283-3bab87836eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/seeds/rol.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601611931549</updated>
-      <workItem from="1601611932827" duration="5718000" />
+      <workItem from="1601611932827" duration="8074000" />
     </task>
     <task id="LOCAL-00001" summary="narnia">
       <created>1601612804548</created>
@@ -156,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601612804548</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="narnia">
+      <created>1601617673539</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601617673539</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,18 +172,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="narnia" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1601612803450">
+    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1601617672691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601612803450" />
+    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601617672691" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1601611955036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601611955036" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601612841428">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601617678274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601612841428" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601617678274" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1601612077005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
