@@ -24,14 +24,14 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('run');
             $table->string('est_civil')->default("soltero");
-            $table->boolean('sex');
+            $table->string('sex');
             $table->integer('cel_phone')->nullable();
             $table->integer('phone')->nullable();
             $table->string('adress');
             $table->string('state');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->unsignedBigInteger('id_rol');
+            $table->unsignedBigInteger('id_rol')->default(1);
             $table->foreign('id_rol')->references('id_rol')->on('roles')->onDelete('cascade')->onUpdate('cascade');
             $table->string('password');
             $table->rememberToken();
