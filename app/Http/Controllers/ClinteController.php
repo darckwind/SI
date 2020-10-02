@@ -95,6 +95,6 @@ class ClinteController extends Controller
     {
         $user = User::find($clinte);
         $user->delete();
-        return redirect()->route('logout');
+        return redirect()->route('login');
     }
 }
