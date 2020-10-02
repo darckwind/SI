@@ -63,13 +63,13 @@
                             <div class="col-md-6">
                                 <label for="name" class="col-md-12 col-form-label text-md-left">Telefono Fijo</label>
                                 <div class="col-md-12">
-                                    <input  type="number" class="form-control" name="phone"  required autofocus>
+                                    <input  type="number" class="form-control" name="phone"  autofocus>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="name" class="col-md-12 col-form-label text-md-left">Telefono celular</label>
                                 <div class="col-md-12">
-                                    <input  type="number" class="form-control" name="cel-phone"  required autofocus>
+                                    <input  type="number" class="form-control" name="cel-phone"  autofocus>
                                 </div>
                             </div>
                             <div class="col-md-6">

@@ -15,6 +15,8 @@ Route::get('/', function () {
     return redirect('login');
 });
 
+
+Route::resource('cliente','ClinteController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
