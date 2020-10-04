@@ -23,41 +23,59 @@
     @endif
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="col-md-2">
-                <label for="name" class="col-md-12 col-form-label text-md-left">Filtro</label>
-                <select id="tipo" class="form-control">
-                    <option value="casa">Casa</option>
-                    <option value="depto">Departamento</option>
-                </select>
-                <br>
-            </div>
-            @foreach($pro as $data)
-            <div class="card" style="width: 18rem;">
-                <img src="{{asset('storage/'.$data->img_casa)}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <table class="table">
-                        <tr>
-                            <th scope="row">Tipo:</th>
-                            <td>{{$data->tipo}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Habitaciones:</th>
-                            <td>{{$data->habitaciones}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Ubicacion:</th>
-                            <td>{{$data->direccion}}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Avaluo:</th>
-                            <td>{{$data->avaluo}}</td>
-                        </tr>
-                    </table>
-                    <a href="#" class="btn btn-primary btn-block col-md-12">cotizar</a>
+            <div class="row">
+                <div class="col-md-10">
+                    <h2>Propiedades Disponibles</h2>
                 </div>
+                <div class="col-md-2" >
+                    <select onchange="filter()" id="tipo" class="form-control">
+                        <option value="all">Todo</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Departamento">Departamento</option>
+                    </select>
+                </div>
+
             </div>
-            @endforeach
+            <hr>
+
+            <div class="col-md-12 row">
+                @foreach($pro as $data)
+
+                    <div class="card" style="width: 18rem;margin-left: 10px;" id="{{$data->tipo}}">
+                        <img src="{{asset('storage/'.$data->img_casa)}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <table class="table">
+                                <tr>
+                                    <th scope="row">Tipo:</th>
+                                    <td>{{$data->tipo}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Habitaciones:</th>
+                                    <td>{{$data->habitaciones}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ubicacion:</th>
+                                    <td>{{$data->direccion}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Avaluo:</th>
+                                    <td>{{$data->avaluo}}</td>
+                                </tr>
+                            </table>
+                            <a href="#" class="btn btn-primary btn-block col-md-12">cotizar</a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
         </div>
     </div>
 </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        function filter(){
+            var x = document.getElementById("tipo").value;
+            console.log(x);
+        }
+    </script>
 @endsection
