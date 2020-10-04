@@ -9,7 +9,6 @@ class PropiedadController extends Controller
 {
     public function __construct()
     {
-        //autentifica que el usuario este loguiado (evita el user guest)
         $this->middleware('auth');
 
     }
@@ -20,7 +19,8 @@ class PropiedadController extends Controller
      */
     public function index()
     {
-        //
+        $propiedad = propiedad::all();
+        return view('propiedad.index',compact('propiedad'));
     }
 
     /**
@@ -30,7 +30,7 @@ class PropiedadController extends Controller
      */
     public function create()
     {
-        //
+        return view('propiedad.create');
     }
 
     /**
@@ -41,7 +41,23 @@ class PropiedadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $propiedad = new propiedad();
+        $propiedad->rol=$request->input('rol_pro');
+        $propiedad->id=$request->input('id');
+        $propiedad->direccion=$request->input('inmueble');
+        $propiedad->avaluo=$request->input('avaluo');
+        $propiedad->tipo=$request->input('tipo_inmueble');
+        $propiedad->habitaciones=$request->input('habi');
+        if($request->img_casa!=""){
+            $propiedad->img_casa = $request->img_casa->store('casa','public');
+        }
+        if($request->titulo!=""){
+            $propiedad->titulo_dominio = $request->titulo->store('titulo','public');
+        }
+        $propiedad->save();
+        return redirect()->route('propiedades.index')
+            ->with('success','Propiedad Agregada');
     }
 
     /**
@@ -61,9 +77,10 @@ class PropiedadController extends Controller
      * @param  \App\propiedad  $propiedad
      * @return \Illuminate\Http\Response
      */
-    public function edit(propiedad $propiedad)
+    public function edit($propiedad)
     {
-        //
+        $pro = propiedad::find($propiedad);
+        return view('propiedad.edit',compact('pro'));
     }
 
     /**
@@ -73,9 +90,26 @@ class PropiedadController extends Controller
      * @param  \App\propiedad  $propiedad
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, propiedad $propiedad)
+    public function update(Request $request, $pro)
     {
-        //
+
+        $propiedad = propiedad::find($pro);
+        $propiedad->rol=$request->input('rol_pro');
+
+        $propiedad->direccion=$request->input('inmueble');
+        $propiedad->avaluo=$request->input('avaluo');
+        $propiedad->tipo=$request->input('tipo_inmueble');
+        $propiedad->habitaciones=$request->input('habi');
+        if($request->img_casa!=""){
+            $propiedad->img_casa = $request->img_casa->store('casa','public');
+        }
+        if($request->titulo!=""){
+            $propiedad->titulo_dominio = $request->titulo->store('titulo','public');
+        }
+        $propiedad->save();
+        return redirect()->route('propiedades.index')
+            ->with('success','Propiedad Actualizada');
+
     }
 
     /**
@@ -84,8 +118,11 @@ class PropiedadController extends Controller
      * @param  \App\propiedad  $propiedad
      * @return \Illuminate\Http\Response
      */
-    public function destroy(propiedad $propiedad)
+    public function destroy( $propiedad)
     {
-        //
+        $ss = propiedad::find($propiedad);
+        $ss->delete();
+        return redirect()->route('propiedades.index')
+            ->with('success','Propiedad Eliminada');
     }
 }

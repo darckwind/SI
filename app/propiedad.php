@@ -8,7 +8,7 @@ class propiedad extends Model
 {
     protected $fillable =[
 
-        'rol','direccion','avaluo','titulo_dominio','img_casa','habitaciones','tipo'
+        'rol','direccion','avaluo','titulo_dominio','img_casa','habitaciones','tipo','id'
 
     ];
     protected $primaryKey = 'rol';

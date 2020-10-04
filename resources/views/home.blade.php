@@ -22,7 +22,15 @@
         </div>
     @endif
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
+            <div class="col-md-2">
+                <label for="name" class="col-md-12 col-form-label text-md-left">Filtro</label>
+                <select id="tipo" class="form-control">
+                    <option value="casa">Casa</option>
+                    <option value="depto">Departamento</option>
+                </select>
+                <br>
+            </div>
             <div class="card">
                 <div class="card-header">Dashboards</div>
 
