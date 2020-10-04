@@ -79,31 +79,31 @@
             switch (x) {
                 case "all":
                     var t = document.getElementsByClassName("Departamento");
-                    for (i = 0; i < t.length; i++) {
+                    for (i = 0; i < t.length-1; i++) {
                         t[i].hidden = false;
                     }
                     var t2 = document.getElementsByClassName("Casa");
-                    for (i = 0; i < t.length; i++) {
+                    for (i = 0; i < t.length-1; i++) {
                         t2[i].hidden = false;
                     }
                     break;
                 case "Casa":
                     var t = document.getElementsByClassName("Departamento");
-                    for (i = 0; i < t.length; i++) {
+                    for (i = 0; i < t.length-1; i++) {
                         t[i].hidden = true;
                     }
                     var t2 = document.getElementsByClassName("Casa");
-                    for (i = 0; i < t.length; i++) {
+                    for (i = 0; i < t.length-1; i++) {
                         t2[i].hidden = false;
                     }
                     break;
                 case "Departamento":
                     var t = document.getElementsByClassName("Casa");
-                    for (i = 0; i < t.length; i++) {
+                    for (i = 0; i < t.length-1; i++) {
                         t[i].hidden = true;
                     }
                     var t2 = document.getElementsByClassName("Departamento");
-                    for (i = 0; i < t.length; i++) {
+                    for (i = 0; i < t.length-1; i++) {
                         t2[i].hidden = false;
                     }
                     break;
