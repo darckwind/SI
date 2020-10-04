@@ -21,6 +21,7 @@
             </ul>
         </div>
     @endif
+
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="row">
@@ -41,7 +42,7 @@
             <div class="col-md-12 row">
                 @foreach($pro as $data)
 
-                    <div class="card" style="width: 18rem;margin-left: 10px;" id="{{$data->tipo}}">
+                    <div class="card {{$data->tipo}}" style="width: 18rem;margin-left: 10px;">
                         <img src="{{asset('storage/'.$data->img_casa)}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <table class="table">
@@ -75,6 +76,38 @@
     <script>
         function filter(){
             var x = document.getElementById("tipo").value;
+            switch (x) {
+                case "all":
+                    var t = document.getElementsByClassName("Departamento");
+                    for (i = 0; i < t.length; i++) {
+                        t[i].hidden = false;
+                    }
+                    var t2 = document.getElementsByClassName("Casa");
+                    for (i = 0; i < t.length; i++) {
+                        t2[i].hidden = false;
+                    }
+                    break;
+                case "Casa":
+                    var t = document.getElementsByClassName("Departamento");
+                    for (i = 0; i < t.length; i++) {
+                        t[i].hidden = true;
+                    }
+                    var t2 = document.getElementsByClassName("Casa");
+                    for (i = 0; i < t.length; i++) {
+                        t2[i].hidden = false;
+                    }
+                    break;
+                case "Departamento":
+                    var t = document.getElementsByClassName("Casa");
+                    for (i = 0; i < t.length; i++) {
+                        t[i].hidden = true;
+                    }
+                    var t2 = document.getElementsByClassName("Departamento");
+                    for (i = 0; i < t.length; i++) {
+                        t2[i].hidden = false;
+                    }
+                    break;
+            }
             console.log(x);
         }
     </script>

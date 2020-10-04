@@ -31,13 +31,13 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Titulo de Dominio vigente</label>
                                     <div class="col-md-12">
-                                        <input  type="file" onchange="readURL(this);" name="titulo" value="{{$pro->titulo}}" autofocus>
+                                        <input  type="file" onchange="readURL(this);" accept="image/jpeg" name="titulo" value="{{$pro->titulo}}" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Imagene Inmueble</label>
                                     <div class="col-md-12">
-                                        <input  type="file" onchange="readURL2(this);" name="img_casa" value="{{$pro->img_casa}}" autofocus>
+                                        <input  type="file" onchange="readURL2(this);" accept="image/jpeg" name="img_casa" value="{{$pro->img_casa}}" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">

@@ -42,7 +42,7 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Imagen Identificacion</label>
                                     <div class="col-md-12">
-                                        <input  type="file" name="img_carnet"  onchange="readURL(this);" accept="image/png"  autofocus value="{{ $user->img_id }}">
+                                        <input  type="file" name="img_carnet"  onchange="readURL(this);" accept="image/jpeg"  autofocus value="{{ $user->img_id }}">
                                     </div>
                                 </div>
                             </div>
@@ -169,13 +169,13 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Copia contrato indefinido</label>
                                     <div class="col-md-12">
-                                        <input  type="file" onchange="readURL2(this);" name="contrato" autofocus>
+                                        <input  type="file" onchange="readURL2(this);" accept="image/jpeg" name="contrato" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Cotizaciones</label>
                                     <div class="col-md-12">
-                                        <input  type="file" onchange="readURL3(this);" name="coti" autofocus>
+                                        <input  type="file" onchange="readURL3(this);" accept="image/jpeg" name="coti" autofocus>
                                     </div>
                                 </div>
                             </div>

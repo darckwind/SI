@@ -51,7 +51,7 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Titulo de Dominio vigente</label>
                                     <div class="col-md-12">
-                                        <input  type="file" onchange="readURL(this);" name="titulo" autofocus>
+                                        <input  type="file" accept="image/jpeg" onchange="readURL(this);" name="titulo" required autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -70,11 +70,9 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Imagene Inmueble</label>
                                     <div class="col-md-12">
-                                        <input  type="file" onchange="readURL2(this);" name="img_casa" autofocus>
+                                        <input  type="file" onchange="readURL2(this);" accept="image/jpeg" name="img_casa" required autofocus>
                                     </div>
                                 </div>
-
-
 
                             </div>
 
