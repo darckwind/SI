@@ -169,13 +169,13 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Copia contrato indefinido</label>
                                     <div class="col-md-12">
-                                        <input  type="file" name="contrato" autofocus>
+                                        <input  type="file" onchange="readURL2(this);" name="contrato" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Cotizaciones</label>
                                     <div class="col-md-12">
-                                        <input  type="file" name="coti" autofocus>
+                                        <input  type="file" onchange="readURL3(this);" name="coti" autofocus>
                                     </div>
                                 </div>
                             </div>
@@ -223,6 +223,28 @@
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     $('#identificacion')
+                        .attr('src', e.target.result)
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function readURL2(input) {
+            document.getElementById('con_id').hidden=false;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#contrato')
+                        .attr('src', e.target.result)
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function readURL3(input) {
+            document.getElementById('con_id').hidden=false;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#coti')
                         .attr('src', e.target.result)
                 };
                 reader.readAsDataURL(input.files[0]);

@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7bdf082-294a-46ad-8283-3bab87836eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PropiedadController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/propiedad.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_212457_create_propiedads_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/propiedad/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/propiedad/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/propiedad/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/propiedad/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClinteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClinteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cliente/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cliente/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="d7bdf082-294a-46ad-8283-3bab87836eb9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601611931549</updated>
       <workItem from="1601611932827" duration="13196000" />
-      <workItem from="1601747308603" duration="20525000" />
+      <workItem from="1601747308603" duration="20856000" />
     </task>
     <task id="LOCAL-00001" summary="narnia">
       <created>1601612804548</created>
@@ -212,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601756189804</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="login as main">
+      <created>1601771135269</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601771135269</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,18 +217,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601625410729" />
-    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1601756189038">
+    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1601771134301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601756189038" />
+    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601771134301" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1601611955036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601611955036" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601756192452">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601771141691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601756192452" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601771141691" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601763226510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
