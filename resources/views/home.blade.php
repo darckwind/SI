@@ -83,7 +83,7 @@
                         t[i].hidden = false;
                     }
                     var t2 = document.getElementsByClassName("Casa");
-                    for (i = 0; i <= t.length; i++) {
+                    for (i = 0; i <= t2.length; i++) {
                         t2[i].hidden = false;
                     }
                     break;
@@ -93,7 +93,7 @@
                         t[i].hidden = true;
                     }
                     var t2 = document.getElementsByClassName("Casa");
-                    for (i = 0; i <= t.length; i++) {
+                    for (i = 0; i <= t2.length; i++) {
                         t2[i].hidden = false;
                     }
                     break;
@@ -103,7 +103,7 @@
                         t[i].hidden = true;
                     }
                     var t2 = document.getElementsByClassName("Departamento");
-                    for (i = 0; i <= t.length; i++) {
+                    for (i = 0; i <= t2.length; i++) {
                         t2[i].hidden = false;
                     }
                     break;
