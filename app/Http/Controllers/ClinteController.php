@@ -63,9 +63,13 @@ class ClinteController extends Controller
      */
     public function update(Request $request ,$id)
     {
-        $user= User::find($id);
 
+
+
+
+        $user= User::find($id);
         $user->name = $request->input('name');
+        $user->cumple = $request->input('birth');
         $user->email = $request->input('email');
         $user->sex= $request->input('sex');
         $user->lastname=$request->input("lastname");
@@ -75,14 +79,28 @@ class ClinteController extends Controller
         $user->phone=$request->input("phone");
         $user->adress=$request->input("adress");
         $user->state=$request->input("state");
+        $user->subsidio=$request->input('subsidio');
+        $user->ahorro=$request->input('ahorro');
+        $user->renta=$request->input('rent');
 
+        if($request->img_carnet!=""){
+            $user->img_id = $request->img_carnet->store('carnet','public');
+        }
+        if($request->coti!=""){
+            $user->coti=$request->coti->store('cotizacion','public');
+        }
+        if($request->contrato!=""){
+            $user->contrato=$request->contrato->store('contrato','public');
+        }
         if ($request->input('password')==null){
             $user->save();
         }else{
             $user->password = Hash::make($request->input('password'));
+            $user->save();
         }
 
-        return redirect()->route('home')->with('success','Datos personales actualizados');
+        return redirect()->route('home')
+            ->with('success','Informacion actualizada');
     }
 
     /**

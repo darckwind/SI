@@ -36,13 +36,13 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">N° Identificacion</label>
                                     <div class="col-md-12">
-                                        <input  type="text" class="form-control" name="run"  required autofocus>
+                                        <input  type="text" class="form-control" name="run" value="{{ $user->run }}" required autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Imagen Identificacion</label>
                                     <div class="col-md-12">
-                                        <input  type="file" name="img_carnet"  required autofocus>
+                                        <input  type="file" name="img_carnet"  onchange="readURL(this);" accept="image/png"  autofocus value="{{ $user->img_id }}">
                                     </div>
                                 </div>
                             </div>
@@ -50,13 +50,13 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Nombres</label>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control" name="name"  required autofocus>
+                                        <input type="text" class="form-control" name="name" value="{{ $user->name }}" required autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Apellidos</label>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control" name="lastname"  required autofocus>
+                                        <input type="text" class="form-control" name="lastname" value="{{ $user->lastname }}" required autofocus>
                                     </div>
                                 </div>
 
@@ -65,12 +65,12 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Fecha Nacimiento</label>
                                     <div class="col-md-12">
-                                        <input type="date" class="form-control" name="birth"  required autofocus>
+                                        <input type="date" class="form-control" name="birth" value="{{ $user->cumple }}" required autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6"><label for="email" class="col-md-12 col-form-label text-md-left">{{ __('E-Mail Address') }}</label>
                                     <div class="col-md-12">
-                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $user->email }}"  autocomplete="email">
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -83,6 +83,7 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Sexo</label>
                                     <select name="sex" class="form-control">
+                                        <option>{{ $user->sex }}</option>
                                         <option>Hombre</option>
                                         <option>Mujer</option>
                                     </select>
@@ -90,6 +91,7 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Estado civil</label>
                                     <select name="est_civil" class="form-control">
+                                        <option>{{ $user->est_civil }}</option>
                                         <option>Soltero</option>
                                         <option>Casado</option>
                                         <option>Diborciado</option>
@@ -100,32 +102,32 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Telefono Fijo</label>
                                     <div class="col-md-12">
-                                        <input  type="text" class="form-control" name="phone"  autofocus>
+                                        <input  type="text" class="form-control" name="phone" value="{{ $user->phone }}" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Telefono celular</label>
                                     <div class="col-md-12">
-                                        <input  type="text"  class="form-control" name="cel-phone"  autofocus>
+                                        <input  type="text"  class="form-control" name="cel-phone" value="{{ $user->cel_phone }}"  autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Direcion</label>
                                     <div class="col-md-12">
-                                        <input  type="text" class="form-control" name="adress"  required autofocus>
+                                        <input  type="text" class="form-control" name="adress" value="{{ $user->adress }}" required autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Ciudad</label>
                                     <div class="col-md-12">
-                                        <input  type="text" class="form-control" name="state"  required autofocus>
+                                        <input  type="text" class="form-control" name="state" value="{{ $user->state }}" required autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="password" class="col-md-12 col-form-label text-md-left">{{ __('Password') }}</label>
 
                                     <div class="col-md-12">
-                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password"  autocomplete="new-password">
 
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -139,59 +141,15 @@
                                     <label for="password-confirm" class="col-md-12 col-form-label text-md-left">{{ __('Confirm Password') }}</label>
 
                                     <div class="col-md-12">
-                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation"  autocomplete="new-password">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row" >
-                                <div class="col-md-12 row"style=" left: 30px;">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" onclick="read_radio(this)" id="inlineRadio1" value="1">
-                                        <label class="form-check-label" for="inlineRadio1">Comprador</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" onclick="read_radio(this)"  id="inlineRadio2" value="2">
-                                        <label class="form-check-label" for="inlineRadio2">Vendedor</label>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div id="buy" class="form-group row" hidden>
-                                <div class="col-md-6">
-                                    <label for="name" class="col-md-12 col-form-label text-md-left">Direccion del inmueble</label>
-                                    <div class="col-md-12">
-                                        <input  type="text" class="form-control" name="inmueble" autofocus>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="name" class="col-md-12 col-form-label text-md-left">Avaluo Fiscal de la propiedad</label>
-                                    <div class="col-md-12">
-                                        <input  type="number" min="0" class="form-control" name="avaluo" autofocus>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="name" class="col-md-12 col-form-label text-md-left">Rol de la Propiedad</label>
-                                    <div class="col-md-12">
-                                        <input  type="text" class="form-control" name="rol_pro" autofocus>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="name" class="col-md-12 col-form-label text-md-left">Titulo de Dominio vigente</label>
-                                    <div class="col-md-12">
-                                        <input  type="file" name="titulo" autofocus>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="name" class="col-md-12 col-form-label text-md-left">Imagenes Inmueble</label>
-                                    <div class="col-md-12">
-                                        <input  type="file"  name="img_casa" autofocus>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="sell" class="form-group row" hidden>
+                            <div id="sell" class="form-group row" >
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Subsidio</label>
                                     <select name="subsidio" class="form-control">
+                                        <option>{{$user->subsidio}}</option>
                                         <option>DS49</option>
                                         <option>DS1</option>
                                     </select>
@@ -199,13 +157,13 @@
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Monto ahorrado</label>
                                     <div class="col-md-12">
-                                        <input  type="number" min="0" class="form-control" name="ahorro" autofocus>
+                                        <input  type="number" min="0" class="form-control" value="{{$user->ahorro}}" name="ahorro" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="name" class="col-md-12 col-form-label text-md-left">Renta Liquida</label>
                                     <div class="col-md-12">
-                                        <input  type="number" min="0" class="form-control" name="rent" autofocus>
+                                        <input  type="number" min="0" class="form-control" name="rent" value="{{$user->renta}}" autofocus>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -224,7 +182,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-12">
                                     <button type="submit" class="btn btn-success btn-block">
-                                        {{ __('Register') }}
+                                        Actualizar
                                     </button>
                                 </div>
                             </div>
@@ -232,35 +190,43 @@
                     </div>
                 </div>
             </div>
+            <div id="con_id" class="col-md-4" >
+                <div class="card" style="width: 18rem;">
+                    <img id="identificacion" src="{{asset('storage/'.$user->img_id)}}" class="img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Cedula de identificacion</h5>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 18rem;">
+                    <img id="contrato" src="{{asset('storage/'.$user->contrato)}}" class="img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Contrato</h5>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 18rem;">
+                    <img id="coti" src="{{asset('storage/'.$user->coti)}}" class="img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Cotizaciones</h5>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
     <script>
-        var currentValue = 0;
         function readURL(input) {
+            document.getElementById('con_id').hidden=false;
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
                 reader.onload = function (e) {
-                    $('#blah')
+                    $('#identificacion')
                         .attr('src', e.target.result)
-                        .width(200)
-                        .height(200);
                 };
                 reader.readAsDataURL(input.files[0]);
             }
         }
-        function read_radio(inlineRadioOptions){
-
-            currentValue = inlineRadioOptions.value;
-            if (currentValue=="1"){
-                document.getElementById("sell").hidden=false;
-                document.getElementById("buy").hidden=true;
-            }else{
-                document.getElementById("buy").hidden=false;
-                document.getElementById("sell").hidden=true;
-            }
-        }
-
-
     </script>
 @endsection
