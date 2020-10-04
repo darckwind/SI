@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bdf082-294a-46ad-8283-3bab87836eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/propiedad/new.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClinteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClinteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PropiedadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PropiedadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/propiedad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/propiedad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_03_212457_create_propiedads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_212457_create_propiedads_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/propiedad/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/propiedad/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/propiedad/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/propiedad/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/propiedad/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/propiedad/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +151,8 @@
       <updated>1601611931549</updated>
       <workItem from="1601611932827" duration="13196000" />
       <workItem from="1601747308603" duration="25755000" />
-      <workItem from="1601784591741" duration="5257000" />
+      <workItem from="1601784591741" duration="5661000" />
+      <workItem from="1601825463477" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="narnia">
       <created>1601612804548</created>
@@ -220,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601771540539</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="login as main">
+      <created>1601789894525</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601789894525</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,18 +240,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601625410729" />
-    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1601771539861">
+    <state x="577" y="97" key="CommitChangelistDialog2" timestamp="1601789893708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601771539861" />
+    <state x="577" y="97" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601789893708" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1601611955036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601611955036" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601771543957">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601789897230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601771543957" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1601789897230" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601763226510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

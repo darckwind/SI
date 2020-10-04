@@ -31,20 +31,32 @@
                 </select>
                 <br>
             </div>
-            <div class="card">
-                <div class="card-header">Dashboards</div>
-
+            @foreach($pro as $data)
+            <div class="card" style="width: 18rem;">
+                <img src="{{asset('storage/'.$data->img_casa)}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session() }}
-
-                        </div>
-                    @endif
-
-                    You are logged in!
+                    <table class="table">
+                        <tr>
+                            <th scope="row">Tipo:</th>
+                            <td>{{$data->tipo}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Habitaciones:</th>
+                            <td>{{$data->habitaciones}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ubicacion:</th>
+                            <td>{{$data->direccion}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Avaluo:</th>
+                            <td>{{$data->avaluo}}</td>
+                        </tr>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block col-md-12">cotizar</a>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </div>

@@ -14,7 +14,7 @@ class CreatePropiedadsTable extends Migration
     public function up()
     {
         Schema::create('propiedads', function (Blueprint $table) {
-            $table->bigIncrements('rol');
+            $table->string('rol');
             $table->string("direccion");
             $table->integer("avaluo");
             $table->string("titulo_dominio");

@@ -21,7 +21,7 @@
                             <div class="col-md-6">
                                 <label for="name" class="col-md-12 col-form-label text-md-left">Imagen Identificacion</label>
                                 <div class="col-md-12">
-                                    <input  type="file" name="img_carnet" onchange="readURL(this);" accept="image/png" required autofocus>
+                                    <input  type="file" name="img_carnet" onchange="readURL(this);" accept="image/jpeg" required autofocus>
                                 </div>
                             </div>
                         </div>

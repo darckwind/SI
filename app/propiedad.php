@@ -12,5 +12,6 @@ class propiedad extends Model
 
     ];
     protected $primaryKey = 'rol';
+    public $incrementing = false;
 
 }
